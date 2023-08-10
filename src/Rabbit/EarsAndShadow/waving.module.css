@@ -1,0 +1,107 @@
+
+.rightEar {  
+    transform:translate(calc(-50% + 50px),0) rotate(-13deg);
+    animation: wavingRightEar 10s infinite 5s;
+}
+
+@keyframes wavingRightEar {
+    0% {
+        transform:translate(calc(-50% + 50px),0) rotate(-13deg);
+    }
+
+    5%{
+        transform:translate(calc(-50% + 60px), -10px) rotate(-40deg);
+    }
+    10%, 100%{
+        transform:translate(calc(-50% + 50px), 0) rotate(-13deg);
+    }
+}
+
+.leftEar {
+    transform:translate(calc(-50% - 50px),0) rotate(13deg);
+    animation: wavingLeftEar 8s infinite 5s;
+}
+
+@keyframes wavingLeftEar {
+    0% {
+        transform:translate(calc(-50% - 50px),0) rotate(13deg);
+    }
+
+    5%{
+        transform:translate(calc(-50% - 60px), -15px) rotate(40deg);
+    }
+    10%, 100%{
+        transform:translate(calc(-50% - 50px), 0) rotate(13deg);
+    }
+}
+.rightEar::after {
+    position: absolute;
+    content: "";
+    width: 136px;
+    height: 115px;
+    left: 50%;
+    top: -33px;
+    transform: rotate(13deg) translateX(calc(-50% - 48px));
+    border-radius: 50%;
+    background-color: #E3E6ED;   
+}
+
+.leftEar::after {
+    position: absolute;
+    content: "";
+    width: 135px;
+    height: 115px;
+    left: 50%;
+    top: -65px;
+    transform: rotate(-13deg) translateX(calc(-50% + 42px));
+    border-radius: 50%;
+    background-color: #E3E6ED;
+}
+
+.shadow {
+    position: absolute;
+    width: 130px;
+    height: 30px;
+    left: 50%;
+    top: 155px;
+    transform: translate(calc(-50% - 50px), calc(-50% - 30px));
+    border-radius: 50%;
+    background-color: #909090;
+}
+
+.shadow::before{
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 30px;
+    left: 50%;
+    top: 25px;
+    transform: skewX(45deg) translate(calc(-50% + 25px), 0);
+    background-color: #909090;
+} 
+.shadow::after{
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    left: 50%;
+    top: 20px;
+    transform: skewX(45deg) translate(calc(-50% - 20px),0) rotate(5deg);
+    border-radius: 0 0 50% 50%;
+    background-color: #909090;
+    animation: wavingLeftEarShadow 8s infinite 5s;
+}
+
+@keyframes wavingLeftEarShadow {
+0% {
+    transform: skewX(45deg) translate(calc(-50% - 20px),0) rotate(5deg);
+}
+
+5%{
+    transform: skewX(45deg) translate(calc(-50% - 25px), -5px) rotate(30deg);
+}
+10%, 100%{
+    transform: skewX(45deg) translate(calc(-50% - 20px), 0) rotate(5deg);
+}
+}
+

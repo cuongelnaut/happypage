@@ -1,0 +1,157 @@
+
+.buttonFrame {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: #3a8dca;
+    width: 250px;
+    height: 100px;
+    border-radius: 50px;
+    box-shadow: 0px -1px 3px #5e6271, 0px 1px 3px #5e6271, -2px 0px 3px #eeeeee,2px 0px 3px #eeeeee;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+.buttonFrame::after {
+    content: "";
+    position:absolute;
+    width: 250px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50% );
+    border-radius: 50px;
+    box-shadow: 0px 3px 5px #252525 inset;
+}
+
+.shineLarge {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(calc(-50% - 125px + 50px), -50%);
+    background-color: #4E98CF;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    transition: all 0.5s ease-in-out;
+}
+.shineMedium{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #60A2D4;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; 
+    transition: all 0.5s ease-in-out;
+}
+.shineSmall {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #70ABD8;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%; 
+    transition: all 0.5s ease-in-out;
+}
+
+.sunMoon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%; 
+    background-color: #FED62E;
+    width: 80px;
+    height: 80px;  
+    box-shadow: 0px -4px 5px #565639 inset, 3px 3px 3px #fff6d4 inset;
+    transition: all 0.5s ease-in-out;
+}
+
+.layerA {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #A9D0EA;
+    color: #ffffff; 
+    transition: all 0.5s ease-in-out;
+}
+
+.layerB {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #F3FDFF;
+    color: #ffffff; 
+    transition: all 0.5s ease-in-out;
+}
+
+.cloud1 {
+    width: 80px;
+    height: 80px;
+    transform: translate( 210px, 0px);
+}
+
+.cloud2 {
+    width: 100px;
+    height: 100px;
+    transform: translate( 200px, 60px);
+}
+
+.cloud3 {
+    width: 60px;
+    height: 60px;
+    transform: translate( 160px, 80px);
+}
+.cloud4 {
+    width: 70px;
+    height: 70px;
+    transform: translate( 120px, 60px);
+}
+
+.cloud5 {
+    width: 50px;
+    height: 50px;
+    transform: translate( 90px, 100px);
+}
+.cloud6 {
+    width: 90px;
+    height: 90px;
+    transform: translate( 20px, 90px);
+}
+
+.cloud7 {
+    width: 100px;
+    height: 100px;
+    transform: translate( 220px, 20px);
+}
+
+.cloud8 {
+    width: 70px;
+    height: 70px;
+    transform: translate( 180px, 90px);
+}
+
+.cloud9 {
+    width: 120px;
+    height: 120px;
+    transform: translate( 110px, 90px);
+}
+.cloud10 {
+    width: 50px;
+    height: 50px;
+    transform: translate( 140px, 75px);
+}
+
+.cloud11 {
+    width: 70px;
+    height: 70px;
+    transform: translate( 75px, 110px);
+}
+
+.cloud12 {
+    width: 90px;
+    height: 90px;
+    transform: translate( 1px, 90px);
+}

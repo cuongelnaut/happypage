@@ -1,0 +1,88 @@
+.cover {
+    position: relative;
+    height: 200px;
+    width: 220px;
+    background-color: transparent;
+    transform: translate(-220px, 0);
+    transition: al 0.1s ease-in-out;
+}
+.appear {
+    position: relative;
+    height: 200px;
+    width: 220px;
+    background-color: transparent;
+    transform: translate(-220px, 0);
+    animation: change 5s ease-in-out;
+    
+}
+@keyframes change {
+    0% {
+        background-color: #ffffff;
+    }
+    10%, 80%{
+        background-color: #0A0A0A;
+    }
+    84%, 88%, 100%{
+
+        background-color: transparent;
+    }
+    82%, 86%, 94% {
+
+        background-color: #0A0A0A;
+    }
+}
+
+.light1 {
+    position: relative;
+    transform: translate(-30px,-100px) ;
+    background-color: transparent;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    border:75px solid transparent;
+    transition: all 0.1s ease-in-out ;
+}
+
+.light2 {
+    position: relative;
+    transform: translate(-30px,-100px) ;
+    background-color: transparent;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    border:75px solid #0A0A0A;
+    transition: all 3s ease-in-out ;
+    animation: blinkblink 5s;
+}
+@keyframes blinkblink {
+    0%, 80%{
+        opacity: 0;
+    }
+    84%, 88%, 100%{
+        opacity: 1;
+        background-color: transparent;
+    }
+    82%, 86%, 94% {
+        opacity: 1;
+        background-color: #0A0A0A;
+    }
+
+}
+.highlight2 {
+    z-index: 5;
+    position: absolute;
+    background-color: transparent;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    box-shadow: 3px 3px 10px #0A0A0A inset,3px -3px 10px #0A0A0A inset,-3px 3px 10px #0A0A0A inset,-3px -3px 10px #0A0A0A inset;
+    animation: blinkblink 5s;
+}
+
+.highlight1 {
+    position: absolute;
+    background-color: transparent;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}

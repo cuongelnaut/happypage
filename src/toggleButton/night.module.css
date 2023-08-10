@@ -1,0 +1,176 @@
+
+
+.buttonFrame {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: #1B1D2A;
+    width: 250px;
+    height: 100px;
+    border-radius: 50px;
+    box-shadow: 0px -1px 3px #5e6271, 0px 1px 3px #5e6271, -2px 0px 3px #eeeeee,2px 0px 3px #eeeeee;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+.buttonFrame::after {
+    content: "";
+    position:absolute;
+    width: 250px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50% );
+    border-radius: 50px;
+    box-shadow: 0px 3px 5px #252525 inset;
+}
+.shineLarge {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(calc(-50% + 125px - 50px), -50%);
+    background-color: #32343F;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    transition: all 0.5s ease-in-out;
+}
+
+.shineMedium {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #474852;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; 
+    transition: all 0.5s ease-in-out;
+}
+.shineSmall {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #595A63;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%; 
+    transition: all 0.5s ease-in-out;
+}
+
+.sunMoon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%; 
+    background-color: #C4C9D2;
+    width: 80px;
+    height: 80px;  
+    box-shadow: 0px -4px 5px #687288 inset, 3px 3px 3px #d0e3f5 inset;
+    transition: all 0.5s ease-in-out;
+}
+.sunMoon::after {
+    content: "";
+    position:absolute;
+    transform: translate(10px, 40px);
+    border-radius: 50%; 
+    background-color: #9DA5B5;
+    width: 25px;
+    height: 25px;  
+    box-shadow: 0px 1px 2px #8A919F inset, 0px 1px 2px #a7b1c4;
+    animation: opacityOn 1s normal forwards;
+}
+.sunMoon::before {
+    content: "";
+    position:absolute;
+    transform: translate(30px, 20px);
+    border-radius: 50%; 
+    background-color: #9DA5B5;
+    width: 15px;
+    height: 15px;  
+    box-shadow: 0px 1px 2px #8A919F inset, 0px 1px 2px #a7b1c4;
+    animation: opacityOn 1s normal forwards;
+}
+
+@keyframes opacityOn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.layerA, .layerB {
+    position: absolute;
+    color: #ffffff;   
+    transition: all 0.5s ease-in-out;
+}
+
+.cloud1 {
+    transform: translate(10px, 20px);
+    font-size: 20px;
+}
+
+.cloud2 {
+    transform: translate(-60px, 105px);
+    font-size: 5px;
+}
+
+.cloud3 {
+    transform: translate(10px, 70px);
+    font-size: 15px;
+}
+.cloud4 {
+    transform: translate(-20px, 40px);
+    font-size: 10px;
+}
+
+
+.cloud5 {
+    transform: translate(50px, 110px);
+    font-size: 5px;
+}
+
+.cloud6 {
+    transform: translate(-10px, 100px);
+    font-size: 5px;
+}
+
+.cloud7 {
+    transform: translate(-40px, 70px);
+    font-size: 25px;
+}
+.cloud8 {
+    transform: translate(-50px, 50px);
+    font-size: 5px;
+}
+.cloud9 {
+    transform: translate(-80px, 70px);
+    font-size: 10px;
+}
+.cloud10{
+    transform: translate(-90px, 30px);
+    font-size: 20px;
+}
+.cloud11 {
+    transform: translate(-120px, 60px);
+    font-size: 5px;
+}
+.cloud12 {
+    transform: translate(-110px, 80px);
+    font-size: 20px;
+}
+
+.cloud1::before, .cloud2::before, .cloud3::before, 
+.cloud4::before, .cloud5::before, .cloud6::before,
+.cloud7::before, .cloud8::before, .cloud9::before,
+.cloud10::before, .cloud11::before, .cloud12::before {
+    position: absolute; 
+    content: "\2726";
+}
+

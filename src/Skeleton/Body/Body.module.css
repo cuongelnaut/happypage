@@ -1,0 +1,201 @@
+.skeleton {
+    position: relative;
+    animation: appear 10s ease-in-out;
+}
+@keyframes appear {
+    0%, 70%{
+        opacity: 0;
+    }
+    90%, 100%{
+        opacity: 1;
+    }
+
+}
+
+.head {
+    position: absolute;
+    width: 110px;
+    height: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.skull {
+    position: absolute;
+    width: 100px;
+    height: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FAFCFE;
+    border-radius: 100% 100% 80% 80%;
+    border: 3px solid #383838;
+    z-index: -3;
+    box-shadow: 2px 1px 5px #b1b1b1 inset;
+}
+
+.jaw {
+    position: absolute;
+    width: 12px;
+    height: 11px;
+    left: 50%;
+    top: 79px;
+    border-radius: 0 0 10px 10px;
+    border: 3px solid #383838;
+    background-color: #FAFCFE;
+    z-index: -2;
+}
+
+.jaw::before {
+    content:"";
+    position: absolute;
+    width: 12px;
+    height: 15px;
+    transform: translateY(-6px);
+    border-radius: 0 0 10px 10px;
+    background-color: #FAFCFE;
+}
+
+.jawA {
+    transform: translateX(calc(-50% - 25px));
+}
+.jawB {
+    transform: translateX(calc(-50% - 8px));
+}
+.jawC {
+    transform: translateX(calc(-50% + 8px));
+}
+.jawD {
+    transform: translateX(calc(-50% + 25px));
+}
+
+.body {
+    position: absolute;
+    width: 110px;
+    height: 45px;
+    left: 50%;
+    top: 94px;
+    transform: translateX(-50%);
+
+}
+.backbone {
+    position: absolute;
+    width: 10px;
+    height: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 3px solid #383838;
+    background-color: #FAFCFE;
+    border-radius: 20px;
+    box-shadow:0 2px 3px #b1b1b1 inset;
+}
+.backbone::after {
+    content:"";
+    position: absolute;
+    width: 10px;
+    height: 35px;
+    background-color: #FAFCFE;
+    border-radius: 20px;
+    z-index: 5;
+    box-shadow: 1px 0px 2px #b1b1b1 inset, 0px 0px 2px #b1b1b1 inset;
+}
+.rib {
+    position: absolute;
+    height: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 3px solid #383838;
+    border-radius: 20px;
+    background-color: #FAFCFE;
+    box-shadow:0 1px 2px #b1b1b1 inset;
+}
+.ribA {
+    width: 70px;
+    top: 0px;
+}
+.ribB {
+    width: 60px;
+    top: 10px;
+}
+.ribC {
+    width: 50px;
+    top: 20px;
+}
+
+.hip {
+    position: absolute;
+    width: 110px;
+    height: 20px;
+    left: 50%;
+    top: 133px;
+    transform: translateX(-50%);
+
+}
+.pelvis {
+    position: absolute;
+    width: 40px;
+    height: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 3px solid #383838;
+    border-radius: 20px;
+    background-color: #FAFCFE;
+    box-shadow:1px 1px 2px #b1b1b1 inset;
+}
+.leg {
+    position: absolute;
+    width: 110px;
+    height: 30px;
+    left: 50%;
+    top: 146px;
+    transform: translateX(-50%);
+
+}
+.thigh::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 10px;
+    left: 50%;
+    transform: translateX(calc(-50% - 15px));
+    border: 3px solid #383838;
+    border-radius: 10px;
+    background-color: #FAFCFE;
+    box-shadow:1px 1px 2px #b1b1b1 inset;
+}
+.thigh::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 10px;
+    left: 50%;
+    transform: translateX(calc(-50% + 15px));
+    border: 3px solid #383838;
+    border-radius: 10px;
+    background-color: #FAFCFE;
+    box-shadow:1px 1px 2px #b1b1b1 inset;
+}
+.shin::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 10px;
+    left: 50%;
+    top: 13px;
+    transform: translateX(calc(-50% - 15px));
+    border: 3px solid #383838;
+    border-radius: 10px;
+    background-color: #FAFCFE;
+    box-shadow:1px 1px 2px #b1b1b1 inset;
+}
+.shin::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 10px;
+    left: 50%;
+    top: 13px;
+    transform: translateX(calc(-50% + 15px));
+    border: 3px solid #383838;
+    border-radius: 10px;
+    background-color: #FAFCFE;
+    box-shadow:1px 1px 5px #b1b1b1 inset;
+}
